@@ -1,6 +1,8 @@
 package com.github.robert2411.rule.checker.core;
 
+import com.github.robert2411.rule.checker.core.impl.RuleCheckerImpl;
 import com.github.robert2411.rule.checker.core.models.Rule;
+import com.github.robert2411.rule.checker.core.models.RuleSet;
 import com.github.robert2411.rule.checker.core.models.ScanError;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,21 +11,15 @@ import java.io.File;
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 public class RuleCheckerTest {
+    String sourceFolder = "./src/test/java/";
+    Rule rule = new Rule("testRule", "testDescription", "@Test");
+    RuleSet ruleSet = new RuleSet("testSet", "test 123", Collections.singletonList(rule));
 
     @Test
-    public void getFilesTest(){
-        RuleChecker ruleChecker = new RuleChecker();
-        List<File> files = ruleChecker.getFiles("./src/test/java/");
-        Assert.assertFalse(files.isEmpty());
-    }
-
-    @Test
-    public void checkFileTest(){
-        RuleChecker ruleChecker = new RuleChecker();
-        List<ScanError> errors = ruleChecker.checkFile(new File("./src/test/java/com/github/robert2411/rule/checker/core/RuleCheckerTest.java"), Collections.singletonList(new Rule("testName", "testDescription", "@Test")));
+    public void checkTest(){
+        RuleCheckerImpl ruleChecker = new RuleCheckerImpl();
+        List<ScanError> errors = ruleChecker.check(sourceFolder, ruleSet);
         Assert.assertFalse(errors.isEmpty());
     }
 }

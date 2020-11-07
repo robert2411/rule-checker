@@ -12,16 +12,17 @@
     <modules>
         <module>rule-checker-core</module>
         <module>rule-checker-maven-plugin</module>
+        <module>rule-checker-test</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <maven-plugin-api.version>3.2.5</maven-plugin-api.version>
-        <maven-plugin-annotations.version>3.4</maven-plugin-annotations.version>
-        <maven-project.version>2.2.1</maven-project.version>
-        <jackson-core.version>2.11.3</jackson-core.version>
+        <maven-plugin-api.version>3.6.3</maven-plugin-api.version>
+        <maven-plugin-annotations.version>3.6.0</maven-plugin-annotations.version>
+        <maven-project.version>3.0-alpha-2</maven-project.version>
+        <jackson.version>2.11.1</jackson.version>
         <maven-plugin-testing-harness.version>3.3.0</maven-plugin-testing-harness.version>
         <junit.version>4.13.1</junit.version>
     </properties>
@@ -56,8 +57,8 @@
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-core</artifactId>
-                <version>${jackson-core.version}</version>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.maven.plugin-testing</groupId>
