@@ -1,4 +1,4 @@
-![Maven Publish](https://github.com/robert2411/rule-checker/workflows/Maven%20Publish/badge.svg) [![Maven Central](https://img.shields.io/maven-central/v/com.github.robert2411/rule-checker.svg)](https://mvnrepository.com/search?q=com.github.sitture)
+![Maven Publish](https://github.com/robert2411/rule-checker/workflows/Maven%20Publish/badge.svg) ![Maven Central](https://img.shields.io/maven-central/v/com.github.robert2411/rule-checker.svg)
 
 # Rule-Checker
 This project is a simple rule checker for (maven) projects. The idea is that you can write a simple ruleset (regex) with some basic rules
