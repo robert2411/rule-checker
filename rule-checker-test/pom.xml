@@ -27,14 +27,25 @@
                 <version>${project.version}</version>
                 <executions>
                 <execution>
+                    <id>ruleSet</id>
                     <phase>compile</phase>
                     <goals>
                         <goal>checkRuleSet</goal>
                     </goals>
                     <configuration>
-                        <ruleSetPath>./ruleset/ruleSet.json</ruleSetPath>
+                        <ruleSetPath>./ruleset/testSet.json</ruleSetPath>
                     </configuration>
                 </execution>
+                    <execution>
+                        <id>scanConfig</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>checkScanConfig</goal>
+                        </goals>
+                        <configuration>
+                            <scanConfigPath>./ruleset/testScanConfig.json</scanConfigPath>
+                        </configuration>
+                    </execution>
             </executions>
             </plugin>
         </plugins>

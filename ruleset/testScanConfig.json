@@ -1,0 +1,8 @@
+{
+  "name" : "testScanConfig",
+  "description" : "test scan config",
+  "ruleSetPaths" : [
+    "./testSet.json",
+    "./testSet2.json"
+  ]
+}

@@ -1,17 +1,17 @@
-package com.github.robert2411.rule.checker.core.models;
+package com.github.robert2411.rule.checker.maven.plugin.models;
 
 import java.util.List;
 
-public class ScanConfig {
+public class MavenScanConfig {
     private String name;
     private String description;
-    private List<RuleSet> ruleSets;
+    private List<String> ruleSetPaths;
 
-    public ScanConfig(){}
-    public ScanConfig(String name, String description, List<RuleSet> ruleSets) {
+    public MavenScanConfig(){}
+    public MavenScanConfig(String name, String description, List<String> ruleSetPaths) {
         this.name = name;
         this.description = description;
-        this.ruleSets = ruleSets;
+        this.ruleSetPaths = ruleSetPaths;
     }
 
     public void setName(String name) {
@@ -22,8 +22,8 @@ public class ScanConfig {
         this.description = description;
     }
 
-    public void setRuleSets(List<RuleSet> ruleSets) {
-        this.ruleSets = ruleSets;
+    public void setRuleSetPaths(List<String> ruleSetPaths) {
+        this.ruleSetPaths = ruleSetPaths;
     }
 
     public String getName() {
@@ -34,7 +34,7 @@ public class ScanConfig {
         return description;
     }
 
-    public List<RuleSet> getRuleSets() {
-        return ruleSets;
+    public List<String> getRuleSetPaths() {
+        return ruleSetPaths;
     }
 }

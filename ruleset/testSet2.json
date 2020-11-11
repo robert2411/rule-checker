@@ -1,0 +1,15 @@
+{
+  "name" : "testRules",
+  "description" :"description",
+  "rules" : [{
+    "name" : "rule1",
+    "description" : "First test rule",
+    "regex": "@Test"
+  },
+    {
+      "name" : "rule2",
+      "description" : "second test rule",
+      "regex": "abSystem\\.out\\.print"
+    }
+  ]
+}
