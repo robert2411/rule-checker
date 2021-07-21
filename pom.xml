@@ -47,7 +47,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <!-- Dependencies -->
         <maven-plugin-api.version>3.6.3</maven-plugin-api.version>
-        <maven-plugin-annotations.version>3.6.0</maven-plugin-annotations.version>
+        <maven-plugin-annotations.version>3.6.1</maven-plugin-annotations.version>
         <maven-project.version>2.2.1</maven-project.version>
         <jackson.version>2.11.3</jackson.version>
         <maven-plugin-testing-harness.version>3.3.0</maven-plugin-testing-harness.version>
