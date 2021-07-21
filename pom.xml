@@ -51,7 +51,7 @@
         <maven-project.version>2.2.1</maven-project.version>
         <jackson.version>2.11.3</jackson.version>
         <maven-plugin-testing-harness.version>3.3.0</maven-plugin-testing-harness.version>
-        <junit.version>4.13.1</junit.version>
+        <junit.version>4.13.2</junit.version>
         <!-- plugins -->
         <maven-plugin-plugin.version>3.6.0</maven-plugin-plugin.version>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
