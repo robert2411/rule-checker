@@ -1,5 +1,5 @@
 FROM maven:3-jdk-8 AS builderimage
-FROM gcr.io/distroless/java:8 AS baseimage
+FROM gcr.io/distroless/java:11 AS baseimage
 
 FROM builderimage AS builder
 WORKDIR /project
